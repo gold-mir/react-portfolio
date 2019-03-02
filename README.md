@@ -1,1 +1,3 @@
 # Readme
+
+![](structure.png)
