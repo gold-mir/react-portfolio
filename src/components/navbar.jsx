@@ -13,13 +13,28 @@ function Navbar(props){
   return (
     <div>
       <style jsx>{`
-        .selected {
-          background-color: lightblue;
-        }
-
         #navbar {
           display: flex;
           justify-content: space-between;
+          padding-left: 4em;
+          padding-right: 4em;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-top: 2px solid;
+          border-bottom: 2px solid;
+        }
+
+        .navbarItem {
+          padding: 5px;
+          padding-right: 5em;
+          padding-left: 5em;
+          background-color: aliceblue;
+          border: 1px solid;
+          border-radius: 10px;
+        }
+
+        .selected {
+          background-color: lightblue;
         }
       `}</style>
       <div id="navbar">

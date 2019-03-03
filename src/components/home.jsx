@@ -9,10 +9,10 @@ function Home(props){
   return (
     <div>
       <style jsx>{`
-        .container {
-          border-style: solid;
-          border-width: 1px;
-        }
+        // .container {
+        //   border-style: solid;
+        //   border-width: 1px;
+        // }
         #descriptionBox {
           width: 65%;
           display: inline-block;

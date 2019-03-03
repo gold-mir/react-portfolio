@@ -64,15 +64,15 @@ class App extends React.Component{
     return (
       <div>
         <h1>{this.state.about.name}</h1>
-        <hr/>
+        {/* <hr/> */}
         <Navbar routes={
           [
             { route: "/", name: "Home" },
-            { route: "/projects", name: "Projects", matchChildren: true },
-            { route: "/about", name: "About Me" }
+            { route: "/about", name: "About Me" },
+            { route: "/projects", name: "Projects", matchChildren: true }
           ]
         }/>
-        <hr/>
+        {/* <hr/> */}
         <Switch>
           <Route exact path='/about' render={() => 
             <Home projects={this.state.projects} about={this.state.about}/>
