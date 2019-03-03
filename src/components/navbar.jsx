@@ -13,13 +13,8 @@ function Navbar(props){
   return (
     <div>
       <style jsx>{`
-        // .navbarItem {
-        //   display: inline-block;
-        // }
-
         .selected {
-          border-width: 1px;
-          border-style: solid;
+          background-color: lightblue;
         }
 
         #navbar {
