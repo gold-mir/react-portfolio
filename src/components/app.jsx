@@ -92,7 +92,7 @@ class App extends React.Component{
         <Navbar routes={
           [
             { route: "/", name: "Home" },
-            { route: "/projects", name: "Projects", matchChildren: true },
+            { route: "/projects", name: "My Projects", matchChildren: true },
             { route: "/about", name: "About Me" }
           ]
         }/>
