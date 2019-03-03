@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 //import components
 import Home from './home';
 import Projects from './projects';
+import Navbar from './navbar';
 
 class App extends React.Component{
 
@@ -64,8 +65,16 @@ class App extends React.Component{
       <div>
         <h1>{this.state.about.name}</h1>
         <hr/>
+        <Navbar routes={
+          [
+            { route: "/", name: "Home" },
+            { route: "/projects", name: "Projects", matchChildren: true },
+            { route: "/about", name: "About Me" }
+          ]
+        }/>
+        <hr/>
         <Switch>
-          <Route exact path='/' render={() => 
+          <Route exact path='/about' render={() => 
             <Home projects={this.state.projects} about={this.state.about}/>
             }/>
           <Route path='/projects' render={(props) => 

@@ -25,8 +25,6 @@ function Home(props){
           float: right;
         }
       `}</style>
-
-      <h2>About Me</h2>
       <div className="container" id="descriptionBox">
         <p>{props.about.description}</p>
       </div>
