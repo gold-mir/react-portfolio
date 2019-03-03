@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ProjectList from './projectList';
 
 function Home(props){
   return (
     <div>
       <h2>This is the home page!</h2>
-      <p>There are {props.projects.length} projects.</p>
-      <p>{props.about}</p>
+      <ProjectList projects={props.projects} count={4}/>
     </div>
   )
 }

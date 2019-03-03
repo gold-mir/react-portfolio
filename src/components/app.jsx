@@ -10,8 +10,39 @@ class App extends React.Component{
     super(props);
     this.state = {
       name: "Miranda Keith",
-      projects: [],
-      about: "Hi my name is Miranda"
+      about: "Hi my name is Miranda",
+      projects: [
+        {
+          name: "Project 1",
+          description: "A project that does stuff.",
+          link: "github.com/someproject"
+        },
+        {
+          name: "Project 2",
+          description: "A project that does stuff.",
+          link: "github.com/someproject"
+        },
+        {
+          name: "Project 3",
+          description: "A project that does stuff.",
+          link: "github.com/someproject"
+        },
+        {
+          name: "Project 4",
+          description: "A project that does stuff.",
+          link: "github.com/someproject"
+        },
+        {
+          name: "Project 5",
+          description: "A project that does stuff.",
+          link: "github.com/someproject"
+        },
+        {
+          name: "Project 6",
+          description: "A project that does stuff.",
+          link: "github.com/someproject"
+        }
+      ]
     }
   }
 
