@@ -6,9 +6,6 @@ import ProjectDetails from './projectDetails';
 
 
 function ProjectList (props){
-
-  console.log(props.count);
-
   let start = props.start || 0;
   let end = props.count? start + props.count : props.projects.length;
 
