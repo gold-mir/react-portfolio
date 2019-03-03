@@ -1,18 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import ProjectList from './projectList';
+import ContactDisplay from './contactDisplay';
 
 function Home(props){
 
-  var styles = {
-
-  }
-
   return (
     <div>
-      <h2>This is the home page!</h2>
-      <div id="projects-container">
+      <style jsx>{`
+        .container {
+          border-style: solid;
+          border-width: 1px;
+        }
+        #descriptionBox {
+          width: 65%;
+          display: inline-block;
+          vertical-align: top;
+        }
+        #infoBox {
+          vertical-align: top;
+          display: inline-block;
+          width: 29%;
+          float: right;
+        }
+      `}</style>
+
+      <h2>About Me</h2>
+      <div className="container" id="descriptionBox">
+        <p>{props.about.description}</p>
+      </div>
+      <div className="container" id="infoBox">
         <ProjectList projects={props.projects} count={4}/>
+        <ContactDisplay contactInfo={props.about.contacts}/>
       </div>
     </div>
   )
@@ -20,7 +40,7 @@ function Home(props){
 
 Home.propTypes = {
   projects: PropTypes.array,
-  about: PropTypes.string
+  about: PropTypes.object
 }
 
 export default Home;
