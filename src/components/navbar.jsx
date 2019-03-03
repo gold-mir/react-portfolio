@@ -11,7 +11,7 @@ function Navbar(props){
   }
 
   return (
-    <div>
+    <React.Fragment>
       <style jsx>{`
         #navbar {
           display: flex;
@@ -46,7 +46,7 @@ function Navbar(props){
           )
         }
       </div>
-    </div>
+    </React.Fragment>
   )
 }
 

@@ -29,32 +29,44 @@ class App extends React.Component{
         {
           title: "Project 1",
           description: "A project that does stuff.",
-          link: "github.com/someproject"
+          details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis erat cursus leo ullamcorper, sed ullamcorper nisl tempor. Nullam sagittis arcu commodo, sagittis diam sed, rutrum erat. Quisque blandit viverra quam. Praesent finibus neque mauris, et consectetur urna elementum nec. Sed iaculis nunc ipsum, eu efficitur lorem tincidunt nec. Sed et fermentum sapien. Mauris gravida sem ut hendrerit pulvinar. Sed rhoncus nisi at dolor maximus rhoncus. Fusce et ligula non ante ornare laoreet. Cras ultrices urna in nunc rutrum, in tincidunt lorem sodales. Phasellus a mi sit amet lorem euismod pharetra in ac nibh. Ut quis tristique neque, eu fermentum risus. In auctor neque eros, at tempor purus suscipit quis.",
+          link: "https://github.com/gold-mir/tetris",
+          id: "1"
         },
         {
           title: "Project 2",
-          description: "A project that does stuff.",
-          link: "github.com/someproject"
+          description: "A project that does a truly spectacular amount of stuff.",
+          details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis erat cursus leo ullamcorper, sed ullamcorper nisl tempor. Nullam sagittis arcu commodo, sagittis diam sed, rutrum erat. Quisque blandit viverra quam. Praesent finibus neque mauris, et consectetur urna elementum nec. Sed iaculis nunc ipsum, eu efficitur lorem tincidunt nec. Sed et fermentum sapien. Mauris gravida sem ut hendrerit pulvinar. Sed rhoncus nisi at dolor maximus rhoncus. Fusce et ligula non ante ornare laoreet. Cras ultrices urna in nunc rutrum, in tincidunt lorem sodales. Phasellus a mi sit amet lorem euismod pharetra in ac nibh. Ut quis tristique neque, eu fermentum risus. In auctor neque eros, at tempor purus suscipit quis.",
+          link: "https://github.com/gold-mir/tetris",
+          id: "2"
         },
         {
           title: "Project 3",
           description: "A project that does stuff.",
-          link: "github.com/someproject"
+          details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis erat cursus leo ullamcorper, sed ullamcorper nisl tempor. Nullam sagittis arcu commodo, sagittis diam sed, rutrum erat. Quisque blandit viverra quam. Praesent finibus neque mauris, et consectetur urna elementum nec. Sed iaculis nunc ipsum, eu efficitur lorem tincidunt nec. Sed et fermentum sapien. Mauris gravida sem ut hendrerit pulvinar. Sed rhoncus nisi at dolor maximus rhoncus. Fusce et ligula non ante ornare laoreet. Cras ultrices urna in nunc rutrum, in tincidunt lorem sodales. Phasellus a mi sit amet lorem euismod pharetra in ac nibh. Ut quis tristique neque, eu fermentum risus. In auctor neque eros, at tempor purus suscipit quis.",
+          link: "https://github.com/gold-mir/tetris",
+          id: "3"
         },
         {
           title: "Project 4",
           description: "A project that does stuff.",
-          link: "github.com/someproject"
+          details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis erat cursus leo ullamcorper, sed ullamcorper nisl tempor. Nullam sagittis arcu commodo, sagittis diam sed, rutrum erat. Quisque blandit viverra quam. Praesent finibus neque mauris, et consectetur urna elementum nec. Sed iaculis nunc ipsum, eu efficitur lorem tincidunt nec. Sed et fermentum sapien. Mauris gravida sem ut hendrerit pulvinar. Sed rhoncus nisi at dolor maximus rhoncus. Fusce et ligula non ante ornare laoreet. Cras ultrices urna in nunc rutrum, in tincidunt lorem sodales. Phasellus a mi sit amet lorem euismod pharetra in ac nibh. Ut quis tristique neque, eu fermentum risus. In auctor neque eros, at tempor purus suscipit quis.",
+          link: "https://github.com/gold-mir/tetris",
+          id: "4"
         },
         {
           title: "Project 5",
           description: "A project that does stuff.",
-          link: "github.com/someproject"
+          details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis erat cursus leo ullamcorper, sed ullamcorper nisl tempor. Nullam sagittis arcu commodo, sagittis diam sed, rutrum erat. Quisque blandit viverra quam. Praesent finibus neque mauris, et consectetur urna elementum nec. Sed iaculis nunc ipsum, eu efficitur lorem tincidunt nec. Sed et fermentum sapien. Mauris gravida sem ut hendrerit pulvinar. Sed rhoncus nisi at dolor maximus rhoncus. Fusce et ligula non ante ornare laoreet. Cras ultrices urna in nunc rutrum, in tincidunt lorem sodales. Phasellus a mi sit amet lorem euismod pharetra in ac nibh. Ut quis tristique neque, eu fermentum risus. In auctor neque eros, at tempor purus suscipit quis.",
+          link: "https://github.com/gold-mir/tetris",
+          id: "5"
         },
         {
           title: "Project 6",
           description: "A project that does stuff.",
-          link: "github.com/someproject"
+          details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis erat cursus leo ullamcorper, sed ullamcorper nisl tempor. Nullam sagittis arcu commodo, sagittis diam sed, rutrum erat. Quisque blandit viverra quam. Praesent finibus neque mauris, et consectetur urna elementum nec. Sed iaculis nunc ipsum, eu efficitur lorem tincidunt nec. Sed et fermentum sapien. Mauris gravida sem ut hendrerit pulvinar. Sed rhoncus nisi at dolor maximus rhoncus. Fusce et ligula non ante ornare laoreet. Cras ultrices urna in nunc rutrum, in tincidunt lorem sodales. Phasellus a mi sit amet lorem euismod pharetra in ac nibh. Ut quis tristique neque, eu fermentum risus. In auctor neque eros, at tempor purus suscipit quis.",
+          link: "https://github.com/gold-mir/tetris",
+          id: "6"
         }
       ]
     }
@@ -63,7 +75,12 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <h1>{this.state.about.name}</h1>
+        <style jsx>{`
+          #title-bar {
+            text-align: center;
+          }
+        `}</style>
+        <h1 id="title-bar">{this.state.about.name}</h1>
         {/* <hr/> */}
         <Navbar routes={
           [
@@ -75,7 +92,7 @@ class App extends React.Component{
         {/* <hr/> */}
         <Switch>
           <Route exact path='/about' render={() => 
-            <Home projects={this.state.projects} about={this.state.about}/>
+            <Home about={this.state.about}/>
             }/>
           <Route path='/projects' render={(props) => 
             <Projects projects={this.state.projects}/>

@@ -29,7 +29,6 @@ function Home(props){
         <p>{props.about.description}</p>
       </div>
       <div className="container" id="infoBox">
-        <ProjectList projects={props.projects} count={4}/>
         <ContactDisplay contactInfo={props.about.contacts}/>
       </div>
     </div>
@@ -37,7 +36,6 @@ function Home(props){
 }
 
 Home.propTypes = {
-  projects: PropTypes.array,
   about: PropTypes.object
 }
 
