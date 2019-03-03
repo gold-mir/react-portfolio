@@ -6,7 +6,7 @@ function Home(props){
   return (
     <div>
       <h2>This is the home page!</h2>
-      <ProjectList projects={props.projects} count={4}/>
+      {/* <ProjectList projects={props.projects} count={4}/> */}
     </div>
   )
 }

@@ -1,10 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
+import ProjectDetails from './projectDetails';
 
 
 function ProjectList (props){
+
+  let toDisplay = props.projects;
+
   return (
-    <div>{props.count} Projects will go here, out of {props.projects.length} total</div>
+    <div>
+      {toDisplay.map((project, index) => 
+        <div key={index}>
+          <h5><Link to={`/projects/${index}`}>{project.title}</Link></h5>
+        </div>
+      )}
+    </div>
   )
 }
 

@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 //import components
 import Home from './home';
+import Projects from './projects';
 
 class App extends React.Component{
 
@@ -13,32 +14,32 @@ class App extends React.Component{
       about: "Hi my name is Miranda",
       projects: [
         {
-          name: "Project 1",
+          title: "Project 1",
           description: "A project that does stuff.",
           link: "github.com/someproject"
         },
         {
-          name: "Project 2",
+          title: "Project 2",
           description: "A project that does stuff.",
           link: "github.com/someproject"
         },
         {
-          name: "Project 3",
+          title: "Project 3",
           description: "A project that does stuff.",
           link: "github.com/someproject"
         },
         {
-          name: "Project 4",
+          title: "Project 4",
           description: "A project that does stuff.",
           link: "github.com/someproject"
         },
         {
-          name: "Project 5",
+          title: "Project 5",
           description: "A project that does stuff.",
           link: "github.com/someproject"
         },
         {
-          name: "Project 6",
+          title: "Project 6",
           description: "A project that does stuff.",
           link: "github.com/someproject"
         }
@@ -52,9 +53,11 @@ class App extends React.Component{
         <h1>{this.state.name}</h1>
         <Switch>
           <Route exact path='/' render={() => 
-            <Home projects={this.state.projects} about={this.state.about}/>}
-          />
-          <Route exact path='/projects' render={(props) => <div>This will be a list of projects</div>}/>
+            <Home projects={this.state.projects} about={this.state.about}/>
+            }/>
+          <Route path='/projects' render={(props) => 
+            <Projects projects={this.state.projects}/>
+          }/>
           <Route exact path='/admin' render={(props) => <div>This will be an admin page to add and remove projects</div>}/>
           <Route render={(props) => <div>Page not found.</div>}/>
         </Switch>
