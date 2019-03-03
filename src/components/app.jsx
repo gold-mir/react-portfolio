@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 //import components
-import Home from './home';
+import About from './about';
 import Projects from './projects';
 import Navbar from './navbar';
 
@@ -92,7 +92,7 @@ class App extends React.Component{
         {/* <hr/> */}
         <Switch>
           <Route exact path='/about' render={() => 
-            <Home about={this.state.about}/>
+            <About about={this.state.about}/>
             }/>
           <Route path='/projects' render={(props) => 
             <Projects projects={this.state.projects}/>

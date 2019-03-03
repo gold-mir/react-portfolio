@@ -4,15 +4,11 @@ import PropTypes from 'prop-types';
 import ProjectList from './projectList';
 import ContactDisplay from './contactDisplay';
 
-function Home(props){
+function About(props){
 
   return (
     <div>
       <style jsx>{`
-        // .container {
-        //   border-style: solid;
-        //   border-width: 1px;
-        // }
         #descriptionBox {
           width: 65%;
           display: inline-block;
@@ -35,8 +31,8 @@ function Home(props){
   )
 }
 
-Home.propTypes = {
+About.propTypes = {
   about: PropTypes.object
 }
 
-export default Home;
+export default About;
