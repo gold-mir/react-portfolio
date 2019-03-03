@@ -7,7 +7,12 @@ import ProjectDetails from './projectDetails';
 
 function ProjectList (props){
 
-  let toDisplay = props.projects;
+  console.log(props.count);
+
+  let start = props.start || 0;
+  let end = props.count? start + props.count : props.projects.length;
+
+  let toDisplay = props.projects.slice(start, end);
 
   return (
     <div>
