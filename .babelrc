@@ -7,5 +7,8 @@
       "targets": "> 0.5% in US, not ie <= 9"
       }
     ]
+  ],
+  "plugins": [
+    "styled-jsx/babel"
   ]
 }
